@@ -67,4 +67,5 @@ Charles has been developed in HTML, CSS and JavaScript. Here is a brief descript
  - [Network Graph](https://github.com/charles-bot-groupTwo/COSC310/network)
  
  
-# CharlesChatBot
+# CharlesBot Video! 
+- [Individual Project Demo Video](CharlesFinal.mp4)

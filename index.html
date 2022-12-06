@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href=".">
+    <link rel="stylesheet" href="styles.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type = "module" src = "toolkit.js" ></script>
+    <script type = "module" src = "app.js" defer> </script>
+    <script src = "responses.js" defer></script>
+    <script data-main = "toolkit" src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> 
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Charles.</title>
+    <div class = "chatHead">
+    <h1 class = "oMessage" style="font-size: 1cm";>Charles.</h1>
+    </div>
+    <div id = "google_translate_element"></div>
+    <script src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},'google_translate_element'
+            );
+        }
+    </script>    
+</head>
+
+<body>
+    <div class="topnav">
+        <div>
+            <li><a class="active" href="#home">Home</a></li>
+        </div>
+        <div>
+            <li><a href="about.html">About</a></li>
+        </div>
+       
+    </div>
+   
+    <div> <p class="intro">Please chat with Charles, so he can recommend the best Apple product based on your preference! 🤖</div>
+    
+    
+    <div class = "chat">
+        <div class = "oMessage">
+            <p  id = "starter" class = "botmsg"></p>
+        </div>
+        <div id = 'chat' class = "oMessage">
+            <p  id = "bottxt" class = "botmsg"></p>
+        </div>
+        
+        <div id = 'inChat' class = "mine messages">
+            <input id = "usertxt" type = "text" placeholder = "Enter Here"class = "message last" style = "font-family: Helvetica";>  
+            <p></p>
+            <i type = "button" onclick="sendButton()"> Send </i>
+        </div>
+    </div>
+   
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2271%20Harvey%20Ave%20Unit%201403,%20Kelowna,%20BC%20V1Y%206H2&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">inserting google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+    
+    
+
+</body>
+</html>
